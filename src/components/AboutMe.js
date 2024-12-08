@@ -36,9 +36,7 @@ const AboutMe = () => {
                     <p className="text-gray-700 mt-4 leading-relaxed">
                         Whether you’re here to share a laugh, collaborate on a project, or just say hi, I’m always excited to connect with new people. Let’s yap and create something amazing together!
                     </p>
-                    <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transform hover:-translate-y-1 transition-all duration-300">
-                        Get in Touch
-                    </button>
+
                 </div>
             </div>
         </div>
