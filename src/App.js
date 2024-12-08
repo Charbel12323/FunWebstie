@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import BlogList from "./pages/BlogList";
 import BlogArticle from "./pages/BlogArticle";
 import AboutMe from "./components/AboutMe";
-
+import PrivacyPolicy from "./components/privacyPolicy";
 const App = () => {
   return (
     <Router>
@@ -31,6 +31,13 @@ const App = () => {
                   Blogs
                 </Link>
               </li>
+              <li>
+                <Link to="/privacy-policy" className="hover:text-yellow-300 transition duration-300 font-semibold">
+                  Privacy Policy
+                </Link>
+              </li>
+
+
             </ul>
           </div>
         </nav>
@@ -47,6 +54,8 @@ const App = () => {
               </div>
             }
           />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
           <Route path="/blogs" element={<BlogList />} />
           <Route path="/blogs/:id" element={<BlogArticle />} />
         </Routes>
