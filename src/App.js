@@ -4,6 +4,7 @@ import BlogList from "./pages/BlogList";
 import BlogArticle from "./pages/BlogArticle";
 import AboutMe from "./components/AboutMe";
 import PrivacyPolicy from "./components/privacyPolicy";
+import ContactMe from "./components/ContactMe";
 const App = () => {
   return (
     <Router>
@@ -36,6 +37,14 @@ const App = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <Link
+                  to="/contact-me"
+                  className="hover:text-yellow-300 transition duration-300 font-semibold"
+                >
+                  Contact Me
+                </Link>
+              </li>
 
 
             </ul>
@@ -58,6 +67,7 @@ const App = () => {
 
           <Route path="/blogs" element={<BlogList />} />
           <Route path="/blogs/:id" element={<BlogArticle />} />
+          <Route path="/contact-me" element={<ContactMe />} />
         </Routes>
       </div>
     </Router>

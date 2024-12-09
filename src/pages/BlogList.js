@@ -26,6 +26,13 @@ const blogs = [
         date: "2024-12-07",
         excerpt: "Experience unparalleled noise cancellation and audio quality with Sony's best headphones yet.",
     },
+    {
+        id: "garmin-epix-pro-gen-2",
+        title: "Garmin EPIX Pro Gen 2",
+        date: "2024-12-09",
+        excerpt: "Experience unparalleled Health Tracking and amazing Hikes.",
+    },
+
 ];
 
 const BlogList = () => {
